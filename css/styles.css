@@ -101,3 +101,71 @@ main {
   padding: 100px;
   color: #000;
 }
+
+.service {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  min-height: 30vh;
+  padding: 80px 50px;
+}
+
+.service .service-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 400px;
+  margin-left: auto;
+  padding-right: 50px;
+  position: relative;
+}
+
+.service-text::after {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+  right: 100px;
+  height: 5px;
+  background-color: #bea67c;
+}
+.service-text::before {
+  position: absolute;
+  content: '';
+  bottom: 7px;
+  left: 0;
+  right: 100px;
+  height: 5px;
+  background-color: #000;
+}
+
+.service-text h2 {
+  font-size: 2.2rem;
+  padding: 1rem 0;
+  text-transform: uppercase;
+}
+
+.service-text p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.service .service-img {
+  max-width: 480px;
+  height: 300px;
+  overflow: hidden;
+}
+
+#service-1 .service-img {
+  margin-left: -15px;
+}
+
+#service-2 .service-img {
+  margin-left: auto;
+  margin-right: -15px;
+}
+
+#service-2 .service-text {
+  text-align: left;
+  margin-right: auto;
+}

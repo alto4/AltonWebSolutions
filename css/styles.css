@@ -14,6 +14,11 @@
   color: inherit;
 }
 
+h2 {
+  font-size: 2rem;
+  margin-bottom: 50px;
+}
+
 /* Navbar Styles */
 header {
   color: #fff;
@@ -61,7 +66,8 @@ header {
   color: #bea67c;
 }
 /* Hero Styles */
-.hero {
+.hero,
+.portfolio {
   position: relative;
   color: #bea67c;
   background-image: linear-gradient( rgba(0, 0, 0, 0.99), rgba(0, 0, 0, 0.5) ),url('../img/header-background.jpg');
@@ -98,8 +104,12 @@ header {
 
 /* Services Styles */
 main {
-  padding: 100px;
+  padding: 10px 0 0;
   color: #000;
+}
+
+.services-container {
+  padding: 50px 0;
 }
 
 .service {
@@ -128,6 +138,7 @@ main {
   height: 5px;
   background-color: #bea67c;
 }
+
 .service-text::before {
   position: absolute;
   content: '';
@@ -168,4 +179,32 @@ main {
 #service-2 .service-text {
   text-align: left;
   margin-right: auto;
+}
+
+/* Portfolio Styles */
+.portfolio {
+  min-height: 95vh;
+  padding: 80px 150px;
+  color: #fff;
+  text-align: center;
+}
+
+.portfolio-container {
+  border: 2px solid #fff;
+  height: 80%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.portfolio-container .project-card {
+  border: 1px solid #fff;
+}
+
+/* Footer Styles */
+footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 30px;
+  margin: 0;
 }
